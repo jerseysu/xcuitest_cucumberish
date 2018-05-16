@@ -13,13 +13,13 @@ protocol Page {
 }
 
 extension Page {
-    
+
     init(_ app: XCUIElement) {
         self.init(app)
         waitFor(element: app)
     }
 
-    func findAll(_ type: XCUIElement.ElementType) -> XCUIElementQuery {
+    func findElement(_ type: XCUIElement.ElementType) -> XCUIElementQuery {
         return XCUIApplication().descendants(matching: type)
     }
     

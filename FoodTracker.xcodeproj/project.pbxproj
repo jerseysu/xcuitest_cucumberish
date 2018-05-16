@@ -15,6 +15,8 @@
 		9000DC4920A042AC008C344E /* Cucumberish.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9000DC3820A0402D008C344E /* Cucumberish.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9000DC4C20A297AA008C344E /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9000DC4B20A297AA008C344E /* Page.swift */; };
 		90394F6F20AAC8FB0038D686 /* StepDefinetion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90394F6E20AAC8FB0038D686 /* StepDefinetion.swift */; };
+		90BE7ED920AC212900C5E64C /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BE7ED820AC212900C5E64C /* MainPage.swift */; };
+		90BE7EDB20AC24F200C5E64C /* MealPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BE7EDA20AC24F200C5E64C /* MealPage.swift */; };
 		AC746C571CC3E5AF00555E6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC746C561CC3E5AF00555E6D /* AppDelegate.swift */; };
 		AC746C591CC3E5AF00555E6D /* MealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC746C581CC3E5AF00555E6D /* MealViewController.swift */; };
 		AC746C5C1CC3E5B000555E6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC746C5A1CC3E5B000555E6D /* Main.storyboard */; };
@@ -71,6 +73,8 @@
 		9000DC4B20A297AA008C344E /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		90394F6D20AAC5880038D686 /* gherkin_parser.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = gherkin_parser.rb; sourceTree = "<group>"; };
 		90394F6E20AAC8FB0038D686 /* StepDefinetion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepDefinetion.swift; sourceTree = "<group>"; };
+		90BE7ED820AC212900C5E64C /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
+		90BE7EDA20AC24F200C5E64C /* MealPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPage.swift; sourceTree = "<group>"; };
 		AC746C531CC3E5AD00555E6D /* FoodTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC746C561CC3E5AF00555E6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC746C581CC3E5AF00555E6D /* MealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealViewController.swift; sourceTree = "<group>"; };
@@ -145,6 +149,8 @@
 			isa = PBXGroup;
 			children = (
 				9000DC4B20A297AA008C344E /* Page.swift */,
+				90BE7ED820AC212900C5E64C /* MainPage.swift */,
+				90BE7EDA20AC24F200C5E64C /* MealPage.swift */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -401,8 +407,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90BE7ED920AC212900C5E64C /* MainPage.swift in Sources */,
 				9000DB8420A03CC1008C344E /* FoodTrackerUITests.m in Sources */,
 				90394F6F20AAC8FB0038D686 /* StepDefinetion.swift in Sources */,
+				90BE7EDB20AC24F200C5E64C /* MealPage.swift in Sources */,
 				9000DC4C20A297AA008C344E /* Page.swift in Sources */,
 				9000DB7520A03AC4008C344E /* FoodTrackerUITests.swift in Sources */,
 			);

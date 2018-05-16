@@ -25,7 +25,7 @@ class StepDefinetion: NSObject {
         //Another step definition
         MatchAll("I select \"([^\\\"]*)\"") { (args, userInfo) -> Void in
             let mealName = args?[0]
-            application.tables.cells.staticTexts[mealName!].tap()
+            MainPage().selectMealByName(mealName!)
         }
         
         MatchAll("I should see Caprese Salad") { (args, userInfo) -> Void in
@@ -39,15 +39,14 @@ class StepDefinetion: NSObject {
         MatchAll("I rating as ([1-9]*)") { (args, userInfo) -> Void in
             
             let mealRating = (NSString(string: (args?[0])!).integerValue - 1)
-            application.otherElements["ratingControl"].buttons.element(boundBy: mealRating).tap()
-            application.buttons["Save"].tap()
+            MealPage().rating(mealRating).saveMeal()
         }
         
         MatchAll("I should see \"([^\\\"]*)\" rating as ([1-9]*)") { (args, userInfo) -> Void in
             
             let mealName = args?[0]
             let mealRating = String((NSString(string: (args?[1])!).integerValue))
-            XCTAssertEqual(application.staticTexts[mealName!].label, mealRating)
+            MainPage().compareRating(mealName!, mealRating)
         }
     }
     
