@@ -84,12 +84,13 @@ class MealTableViewController: UITableViewController {
     let meal = meals[indexPath.row]
 
     cell.nameLabel.text = meal.name
-    cell.nameLabel.accessibilityIdentifier = "mealname"
+    cell.nameLabel.accessibilityIdentifier = meal.name
+    cell.nameLabel.accessibilityLabel = String(meal.rating)
     cell.photoImageView.image = meal.photo
     cell.photoImageView.accessibilityIdentifier = "photoview"
     cell.ratingControl.rating = meal.rating
-    cell.ratingControl.accessibilityIdentifier = "ratingContrl"
-
+    cell.ratingControl.accessibilityIdentifier = "ratingcontrol"
+    
     return cell
   }
 

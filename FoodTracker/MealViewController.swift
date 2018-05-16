@@ -39,9 +39,10 @@ class MealViewController: UIViewController, /* protocols */ UITextFieldDelegate,
       nameTextField.accessibilityIdentifier = "nameText"
       nameTextField.accessibilityLabel = meal.name
       photoImageView.image = meal.photo
-      photoImageView.accessibilityIdentifier = "PhotoView"
+      photoImageView.accessibilityIdentifier = "photoImage"
       ratingControl.rating = meal.rating
-      ratingControl.accessibilityIdentifier = "RatingControl"
+      ratingControl.accessibilityIdentifier = "ratingControl"
+      ratingControl.accessibilityLabel = String(meal.rating)
     }
 
     // Enable the Save button only if the text field has a valid Meal name.
