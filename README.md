@@ -61,9 +61,9 @@ class MainPage: Page {
 ![](demo.png)
 
 ## Documentation:
+Blog: [XCUITest with Cucumberish](https://medium.com/@loverjersey/%E4%BD%BF%E7%94%A8-xcuitest-%E7%8E%A9-cucumber-xcuitest-with-cucumberish-a4770bec7f0c)
 
 
-
-## About Me
+## Author
 
 Jersey Su – [@jerseysu](https://twitter.com/jerseysu) 
