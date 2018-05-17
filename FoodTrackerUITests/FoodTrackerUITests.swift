@@ -28,6 +28,7 @@ import Cucumberish
         Cucumberish.executeFeatures(inDirectory: "Features", from: bundle, includeTags: nil, excludeTags: nil)
         
         before { (scenario: CCIScenarioDefinition?) in
+            application.launchArguments.append("--UITests")
             application.launch()
         }
         
