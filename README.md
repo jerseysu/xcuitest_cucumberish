@@ -1,6 +1,8 @@
 # xcuitest_cucumberish
 > This Project is for XCUITest + Cucumberish Demo.
 
+[![Build Status](https://travis-ci.com/jerseysu/xcuitest_cucumberish.svg?branch=master)](https://travis-ci.com/jerseysu/xcuitest_cucumberish)
+
 The FoodTracker App is based on following instruction:
 
 iOS Developer Library: [Start Developing iOS Apps (Swift)](https://developer.apple.com/library/ios/referencelibrary/GettingStarted/DevelopiOSAppsSwift/)
