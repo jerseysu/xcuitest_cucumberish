@@ -4,13 +4,11 @@ language: objective-c
 
 xcode_workspace: FoodTracker.xcworkspace
 xcode_scheme: FoodTracker
-xcode_sdk: iphonesimulator9.3
 
-branches:
-  only:
-    - master
+cache:
+  directories:
+  - Carthage
 
-notifications:
-  email:
-    on_success: change
-    on_failure: always
+script: 
+  - carthage update --platform iOS
+  - xcodebuild test -workspace FoodTracker.xcworkspace -scheme FoodTracker -destination 'platform=iOS Simulator,name=iPhone 8 Plus,OS=11.3'
