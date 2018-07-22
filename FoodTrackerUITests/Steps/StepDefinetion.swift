@@ -29,12 +29,9 @@ class StepDefinetion: NSObject {
             MainPage().selectMealByName(mealName!)
         }
         
-        MatchAll("I should see Caprese Salad") { (args, userInfo) -> Void in
-            //Assume you defined an "I tap on \"(.*)\" button" step previousely, you can call it from your code as well.
-            //let testCase = userInfo?[kXCTestCaseKey] as? XCTestCase
-            //SStep(testCase, "I tap the \"Clear All Data\" button")
-            
-            XCTAssertTrue(application.otherElements["Caprese Salad"].exists)
+        MatchAll("I should see \"([^\\\"]*)\"") { (args, userInfo) -> Void in
+            let mealName = args?[0]
+            MealPage().checkMeal(mealName!)
         }
         
         MatchAll("I rating as ([1-9]*)") { (args, userInfo) -> Void in

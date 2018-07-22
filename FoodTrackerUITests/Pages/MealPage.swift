@@ -11,6 +11,7 @@ import XCTest
 class MealPage: Page {
     private lazy var meals = findElement(.table).cells.staticTexts
     private lazy var ratingController = findElement(.other)["ratingControl"]
+    private lazy var mealsNameLabel = findElement(.other)
     private lazy var saveButton = findElement(.button)["Save"]
     
     required init() {
@@ -24,6 +25,11 @@ class MealPage: Page {
     
     @discardableResult func saveMeal() -> MealPage{
         saveButton.tap()
+        return self
+    }
+    
+    @discardableResult func checkMeal(_ mealName: String) -> MealPage{
+        XCTAssertTrue(mealsNameLabel[mealName].exists)
         return self
     }
 }

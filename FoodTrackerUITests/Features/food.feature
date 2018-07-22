@@ -3,7 +3,7 @@ Feature: FoodTracker Cucumberish Exapmle
 Scenario: Verify Meal Caption
 Given the app is running
 When I select "Caprese Salad"
-Then I should see Caprese Salad
+Then I should see "Caprese Salad"
 
 Scenario Outline: Verify Meal Rating
 When I select "<meal>"
