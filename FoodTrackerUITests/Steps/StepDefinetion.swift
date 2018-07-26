@@ -19,8 +19,7 @@ class StepDefinetion: NSObject {
         
         //A Given step definition
         Given("the app is running") { (args, userInfo) -> Void in
-            application.launchArguments.append("--UITests")
-            application.launch()
+            MainPage().checkMainPage()
         }
         
         //Another step definition

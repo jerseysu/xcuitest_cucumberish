@@ -26,4 +26,9 @@ class MainPage: Page {
         XCTAssertEqual(mealNameWithRating[mealName].label, mealRating)
         return self
     }
+    
+    @discardableResult func checkMainPage() -> MainPage{
+        XCTAssertTrue(title.exists)
+        return self
+    }
 }
